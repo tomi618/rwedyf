@@ -6,6 +6,8 @@ load_dotenv(os.path.join(os.getcwd(), 'rwydef', '.env'))
 
 # password = quote_plus(os.getenv('PASSWORD'))
 database_uri = quote_plus(os.getenv('DATABASE_URI'))
+
+# print(database_uri)
 class Config():
       DEBUG=False
       SECRET_KEY=os.getenv('SECRET_KEY')

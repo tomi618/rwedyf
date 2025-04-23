@@ -1,0 +1,102 @@
+{% extends "layout.html" %} {% block content %}
+<h1>{{title}}</h1>
+<blockquote><em>{{page_quote}}</em></blockquote>
+
+<section>
+  <article>
+    <p>
+      Your donation fuels our mission to empower women and children through
+      education, healthcare, economic opportunities, and community support.
+      Every contribution creates lasting change—helping build brighter futures
+      in underserved communities.
+    </p>
+  </article>
+  
+  <div class="row justify-content-center">
+  <div class="col-md-6 col-lg-12">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        
+        <h3 class="card-title text-center">Donate</h3>
+        
+        <form method="POST" action="">
+          {{ form.hidden_tag() }}
+          <fieldset class="form-group">
+           
+              <!-- First Name Field -->
+            <div class="form-group my-2">
+              {{ form.firstname.label(class='form-control-label') }} {{
+              form.firstname(class='form-control' + (' is-invalid' if
+              form.firstname.errors else '')) }} {% if form.firstname.errors %}
+              <div class="invalid-feedback">
+                {% for error in form.firstname.errors %}
+                <span>{{ error }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="form-group my-2">
+              {{ form.lastname.label(class='form-control-label') }} {{
+              form.lastname(class='form-control' + (' is-invalid' if
+              form.lastname.errors else '')) }} {% if form.lastname.errors %}
+              <div class="invalid-feedback">
+                {% for error in form.lastname.errors %}
+                <span>{{ error }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+           
+            <div class="form-group  my-2">
+              {{ form.phone_no.label(class='form-control-label') }} {{
+              form.phone_no(class='form-control' + (' is-invalid' if
+              form.phone_no.errors else '')) }} {% if form.phone_no.errors %}
+              <div class="invalid-feedback">
+                {% for error in form.phone_no.errors %}
+                <span>{{ error }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="form-group  my-2">
+              {{ form.email.label(class='form-control-label') }} {{
+              form.email(class='form-control' + (' is-invalid' if
+              form.email.errors else '')) }} {% if form.email.errors %}
+              <div class="invalid-feedback">
+                {% for error in form.email.errors %}
+                <span>{{ error }}</span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+           
+           <div class="form-group my-2">
+            {{ form.amount.label(class='form-control-label') }}
+            {{ form.amount(
+                class='form-control' + (' is-invalid' if form.amount.errors else ''),
+                **{'min': '100', 'step': '100'}  
+            ) }}
+            {% if form.amount.errors %}
+                <div class="invalid-feedback">
+                    {% for error in form.amount.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+ 
+          <!-- Submit Button -->
+          <div class="form-group text-center my-2">
+            {{ form.submit(class='btn btn-dark btn-block') }}
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+{% endblock content %}

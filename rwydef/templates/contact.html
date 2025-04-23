@@ -1,0 +1,81 @@
+{% extends "layout.html" %} {% block content %}
+
+<h1 class="mb-4">Contact Us</h1>
+
+<div class="row">
+  <!-- Contact Form -->
+  <div class="col-md-7">
+    <form method="POST" action="/send-message">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject" />
+      </div>
+
+      <div class="mb-2">
+        <label for="message" class="form-label">Message</label>
+        <textarea
+          class="form-control"
+          id="message"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <div class="my-1 text-center">
+        <button type="submit" class="btn btn-dark mx-auto">Send Message</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="col-md-5">
+    <div class="p-4 bg-light rounded shadow-sm">
+      <h4>Get in Touch</h4>
+      <p>
+        If you have questions, feedback, or would like to collaborate, reach out
+        to us using the form or through the contact details below.
+      </p>
+      <ul class="list-unstyled">
+        <li><strong>Email:</strong> rweydf2002@gmail.com</li>
+        <li><strong>Phone:</strong> +234 80 358 71751, +234 81 628 30235,</li>
+        <li>
+          <strong>Office1:</strong> Beside Federal High Court, ALAMA Hotel,
+          Lokoja, Kogi State
+        </li>
+        <li>
+          <strong>Office2:</strong> CS 58 Harmonic Plaza, Mike Akhigbe way,
+          Jabi, Abuja
+        </li>
+      </ul>
+      <p>Follow us on social media:</p>
+      <div>
+        <a href="#" class="btn btn-sm btn-outline-primary me-2">Facebook</a>
+        <a href="#" class="btn btn-sm btn-outline-info">Twitter</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,4 @@
+venv
+rwydef/.env
+__pycache__/
+migrations/

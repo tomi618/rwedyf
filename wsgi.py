@@ -4,4 +4,3 @@ from rwydef.extensions import db
 import os
 
 app = create_app()
-init_db(app, db)

@@ -1,8 +1,4 @@
-from app import create_app
-from rwydef.extensions import db
-
-app = create_app()
-
-with app.app_context():
-      db.create_all()
-      print('Database created successfully')
+def init_db(app, db):
+      with app.app_context():
+            db.create_all()
+            print('Database created successfully')

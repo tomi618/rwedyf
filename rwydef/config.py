@@ -6,6 +6,6 @@ load_dotenv(os.path.join(os.getcwd(), 'rwydef', '.env'))
 
 password = quote_plus(os.getenv('PASSWORD'))
 class Config():
-      DEBUG=True
+      DEBUG=False
       SECRET_KEY=os.getenv('SECRET_KEY')
       SQLALCHEMY_DATABASE_URI = f"postgresql+psycopg2://{os.getenv('USER')}:{password}@localhost:{os.getenv('PORT')}/{os.getenv('DB')}"

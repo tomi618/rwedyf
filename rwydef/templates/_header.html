@@ -1,75 +1,29 @@
-<header
-  class="header"
-  style="
-    background: linear-gradient(120deg, #e0f7fa 0%, #fffde7 100%);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  "
->
+<header class="header" id="header">
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid text-dark">
-      <!-- Brand on the left -->
+    <div class="container">
       <a class="navbar-brand" href="/">
-        <img
-          src="https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031759/rwydef_logo_dbusb0.png"
-          alt="Logo"
-          width="40"
-          height="40"
-        />
+        <img src="https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031759/rwydef_logo_dbusb0.png"
+          alt="RWYDEF Logo" width="50" height="50">
       </a>
 
-      <!-- Toggler button (will appear on the right on mobile) -->
-      <button
-        class="navbar-toggler ms-auto"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Collapsible content pushed to the right -->
-      <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarSupportedContent"
-      >
-        <ul
-          class="navbar-nav mb-2 mb-lg-0 navigation-items"
-          style="color: #388e3c; font-weight: 500; letter-spacing: 0.5px"
-        >
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/about"
-              >About Us</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
-          </li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Membership
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Membership</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/members">Members</a></li>
               <li><a class="dropdown-item" href="/partners">Partners</a></li>
             </ul>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="/donate">Donate</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="/contact-us">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="/donate">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
         </ul>
       </div>
     </div>

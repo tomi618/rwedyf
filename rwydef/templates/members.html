@@ -5,12 +5,12 @@
 >
   <div class="container">
     <h2
-      class="mb-4 text-center"
+      class="my-4 text-center"
       style="font-family: 'Poppins', Arial, sans-serif; color: #388e3c"
     >
       Our Members
     </h2>
-    <div class="row g-4 justify-content-center">
+    <div class="row g-3 justify-content-center">
       {% for member in [ {'name': 'Dr. Kabiru Atta', 'role': 'Project
       Coordinator', 'img': 'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/dr_kb_q5ccnc.png'}, {'name': 'Mrs. Atta
       Sherifat', 'role': 'Procurement Officer', 'img':
@@ -21,8 +21,8 @@
       'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/female-avatar_ryy6h5.jpg'}, {'name': 'Mr. Muhammed
       Lamidi Enesi.', 'role': 'Monitoring & Evaluation Officer', 'img':
       'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/male-avatar_fz50lc.jpg'} ] %}
-      <div class="col-md-3 col-sm-6">
-        <div class="card shadow-sm border-0 text-center h-100 rounded-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card member-card shadow-sm border-0 text-center h-100 rounded-4">
           <img
             src="{{ member.img }}"
             class="card-img-top rounded-circle mx-auto mt-3"
@@ -31,7 +31,7 @@
           />
           <div class="card-body">
             <h5 class="card-title">{{ member.name }}</h5>
-            <p class="card-text text-muted text-center">{{ member.role }}</p>
+            <p class="card-text text-muted text-center fst-italic">{{ member.role }}</p>
           </div>
         </div>
       </div>

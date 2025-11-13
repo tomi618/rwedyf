@@ -1,181 +1,208 @@
 {% extends "layout.html" %} {% block content %}
-
-<!-- Hero Section -->
-<section
-  class="hero-section d-flex align-items-center"
-  style="
-    min-height: 70vh;
-    background: linear-gradient(120deg, #e0f7fa 0%, #fffde7 100%),
-      url('/static/pics/bobo_mod.jpg') center/cover no-repeat;
-  "
->
-  <div class="container text-center position-relative py-5">
-    <h1
-      class="display-3 fw-bold mb-3"
-      style="
-        font-family: 'Poppins', Arial, sans-serif;
-        color: #1b3a2b;
-        text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
-      "
-    >
-      Empowering Rural Communities
-    </h1>
-    <p class="lead mb-4" style="max-width: 600px; margin: 0 auto; color: #333">
-      <strong>RWYDEF</strong> works to improve health, education, and the
-      well-being of vulnerable groups in Kogi State, Nigeria.
-    </p>
-    <div class="cta-buttons d-flex justify-content-center gap-3 flex-wrap mb-4">
-      <!-- <a href="/donate" class="btn btn-success btn-lg rounded-pill px-4 shadow"
-        >Support Us</a
-      > -->
-      <a
-        href="/about"
-        class="btn btn-outline-success btn-lg rounded-pill px-4 shadow"
-        >About Us</a
-      >
-    </div>
-  </div>
-</section>
-
-<!-- About & Mission Section -->
-<section id="about" class="py-5" style="background: #f6f8fa">
-  <div class="container section rounded-4 shadow-sm p-4 my-4">
-    <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img
-          src="https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031758/together_kcy0xu.webp"
-          alt="About Us"
-          class="img-fluid rounded-4 shadow"
-          style="max-height: 320px; object-fit: cover"
-        />
-      </div>
-      <div class="col-md-6">
-        <h2
-          class="mb-3"
-          style="font-family: 'Poppins', Arial, sans-serif; color: #388e3c"
-        >
-          Who We Are
-        </h2>
-        <p style="color: #444">
-          Since 2002, RWEYDF has been igniting grassroots change by empowering
-          rural women and youth to lead healthier, more hopeful lives. We
-          advocate for public health, safety, education, and essential social
-          support— believing in the power of communities to shape their own
-          future. Dedicated to improving the well-being of vulnerable
-          populations, we actively contribute to the prevention, treatment, and
-          support of individuals affected by HIV, malaria, tuberculosis, and
-          other communicable and non-communicable diseases. Through close
-          collaboration with local voices, we uplift lives and help people dream
-          again.
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container text-center hero-content">
+        <h1 class="hero-title">Empowering Rural Communities</h1>
+        <p class="hero-subtitle">
+          <strong>RWYDEF</strong> works to improve health, education, and the well-being
+          of vulnerable groups in Kogi State, Nigeria through sustainable community-led initiatives.
         </p>
-        <a
-          href="/about"
-          class="btn btn-outline-success btn-home rounded-pill mt-2"
-          >Read Our Story</a
-        >
+        <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+          <a href="/donate" class="btn btn-primary-custom">
+            <i class="bi bi-heart-fill me-2"></i>Support Our Mission
+          </a>
+          <a href="/about" class="btn btn-outline-custom">
+            Learn More <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    
+    <!-- About Section -->
+    <section class="py-5" style="background: #f8f9fa;">
+      <div class="container my-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 slide-in-left">
+            <div class="position-relative">
+              <img src="https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031758/together_kcy0xu.webp"
+                alt="Community Together" class="img-fluid rounded-4 shadow-lg" style="border: 8px solid white;">
+              <div class="position-absolute bottom-0 start-0 bg-white rounded-3 shadow p-3 m-3" style="max-width: 200px;">
+                <h4 class="text-success mb-0">20+</h4>
+                <small class="text-muted">Years of Impact</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 slide-in-right">
+            <h2 class="section-title">Who We Are</h2>
+            <p class="lead text-muted mb-4">
+              Since 2002, RWYDEF has been igniting grassroots change by empowering
+              rural women and youth to lead healthier, more hopeful lives.
+            </p>
+            <p class="text-muted mb-4">
+              We advocate for public health, safety, education, and essential social
+              support—believing in the power of communities to shape their own future.
+              Dedicated to improving the well-being of vulnerable populations, we actively
+              contribute to the prevention, treatment, and support of individuals affected
+              by HIV, malaria, tuberculosis, and other communicable and non-communicable diseases.
+            </p>
+            <div class="d-flex gap-4 mb-4">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                <span>Community-Led</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                <span>Sustainable Impact</span>
+              </div>
+            </div>
+            <a href="/about" class="btn btn-outline-custom">
+              Read Our Full Story <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Impact Stats -->
+    <section class="py-5" style="background: linear-gradient(135deg, #fffde7 0%, #fff9c4 100%);">
+      <div class="container my-4">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="impact-card text-center">
+              <div class="icon-circle">
+                <i class="bi bi-calendar-check"></i>
+              </div>
+              <h3 class="impact-number">20+</h3>
+              <p class="impact-label">Years of Community Impact</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-card text-center">
+              <div class="icon-circle">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="impact-number">30,000+</h3>
+              <p class="impact-label">Lives Touched & Transformed</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="impact-card text-center">
+              <div class="icon-circle">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <h3 class="impact-number">50+</h3>
+              <p class="impact-label">Projects Completed & Ongoing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Our Work Section -->
+    <section class="py-5" style="background: #e0f7fa;">
+      <div class="container my-5">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Our Work</h2>
+          <p class="lead text-muted">Creating lasting change through targeted initiatives</p>
+        </div>
+    
+        <div class="row g-4">
+          <!-- Current Projects -->
+          <div class="col-lg-6">
+            <div class="project-card project-card-current">
+              <div class="d-flex align-items-center mb-4">
+                <div class="icon-circle me-3">
+                  <i class="bi bi-lightbulb-fill"></i>
+                </div>
+                <h3 class="mb-0" style="color: #2196f3;">Current Projects</h3>
+              </div>
+    
+              <div class="mb-4">
+                <div class="project-item">
+                  <!-- <i class="bi bi-heart-pulse text-danger me-2"></i> -->
+                  Community Health Outreach Programs focusing on HIV/AIDS prevention and treatment
+                </div>
+                <div class="project-item">
+                  <!-- <i class="bi bi-mortarboard text-primary me-2"></i> -->
+                  Youth Empowerment and Skills Development Initiatives
+                </div>
+                <div class="project-item">
+                  <!-- <i class="bi bi-shield-check text-success me-2"></i> -->
+                  Malaria Prevention Campaign in Rural Areas
+                </div>
+              </div>
+    
+              <div class="text-center">
+                <a href="/projects" class="btn btn-outline-custom">
+                  View All Projects <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Past Projects -->
+          <div class="col-lg-6">
+            <div class="project-card project-card-past">
+              <div class="d-flex align-items-center mb-4">
+                <div class="icon-circle me-3">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <h3 class="mb-0" style="color: #757575;">Past Projects</h3>
+              </div>
+    
+              <div class="mb-4">
+                <div class="project-item">
+                  <!-- <i class="bi bi-book text-info me-2"></i> -->
+                  Women's Literacy and Education Programs (2015-2020)
+                </div>
+                <div class="project-item">
+                  <!-- <i class="bi bi-hospital text-warning me-2"></i> -->
+                  Tuberculosis Awareness and Support Services
+                </div>
+                <div class="project-item">
+                  <!-- <i class="bi bi-tree text-success me-2"></i> -->
+                  Agricultural Training for Rural Communities
+                </div>
+              </div>
+    
+              <div class="text-center">
+                <a href="/projects" class="btn btn-outline-custom">
+                  View All Projects <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section position-relative">
+      <div class="container text-center position-relative" style="z-index: 1;">
+        <h2 class="display-4 fw-bold mb-4">Join Us in Making a Difference</h2>
+        <p class="lead mb-5" style="max-width: 700px; margin: 0 auto;">
+          Your support helps us reach more communities with life-saving programs
+          and sustainable development initiatives.
+        </p>
+        <a href="/donate" class="btn btn-light btn-lg px-5 py-3 rounded-pill shadow-lg"
+          style="font-weight: 600; font-size: 1.2rem;">
+          <i class="bi bi-heart-fill text-danger me-2"></i>
+          Support Our Mission
+        </a>
+      </div>
+    </section>
 
-<!-- Impact Highlights Section -->
-<section class="py-5" style="background: #fffbe7">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="p-4 rounded-4 shadow-sm bg-white">
-          <h3 class="text-success mb-2">20+ Years</h3>
-          <p class="mb-0">of Community Impact</p>
-        </div>
+    <!-- Newsletter Signup Section -->
+    <section class="py-5 bg-white">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Stay Connected</h2>
+        <p class="lead text-muted mb-4">Get updates on our latest projects and community stories</p>
+        <form class="newsletter-form d-flex justify-content-center flex-wrap gap-3">
+          <input type="email" class="form-control form-control-lg w-50" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-success btn-lg px-4">Subscribe</button>
+        </form>
       </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="p-4 rounded-4 shadow-sm bg-white">
-          <h3 class="text-success mb-2">30,000+</h3>
-          <p class="mb-0">Lives Touched</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 rounded-4 shadow-sm bg-white">
-          <h3 class="text-success mb-2">50+ Projects</h3>
-          <p class="mb-0">Completed & Ongoing</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Featured Projects -->
-<section class="py-5" style="background: #e0f7fa" id="our-work">
-  <div class="container">
-    <h2
-      class="mb-4 text-center"
-      style="font-family: 'Poppins', Arial, sans-serif; color: #1b3a2b"
-    >
-      Our Work
-    </h2>
-    <div class="row g-4">
-      <div class="col-md-6 d-flex">
-        <div
-          class="p-3 rounded shadow-sm w-100 h-100 d-flex flex-column bg-white"
-        >
-          <h4 class="mb-3 text-primary">
-            <i class="bi bi-lightbulb"></i> Some Current Projects
-          </h4>
-          <ul class="list-unstyled flex-grow-1">
-            {% for item in projects.current_projects[:3] %}
-            <li class="my-3 d-flex align-items-start">
-              <div class="p-1 rounded flex-grow-1">{{ item }}</div>
-            </li>
-            {% endfor %}
-          </ul>
-          <a
-            href="/projects"
-            class="btn btn-sm btn-outline-primary btn-home mx-auto mt-auto rounded-pill"
-            >See All</a
-          >
-        </div>
-      </div>
-      <div class="col-md-6 d-flex">
-        <div
-          class="p-3 rounded shadow-sm w-100 h-100 d-flex flex-column bg-white"
-        >
-          <h4 class="mb-3 text-secondary">
-            <i class="bi bi-clock-history"></i> Some Past Projects
-          </h4>
-          <ul class="list-unstyled flex-grow-1">
-            {% for item in projects.past_projects[:3] %}
-            <li class="my-3 d-flex align-items-start">
-              <div class="p-1 rounded flex-grow-1">{{ item }}</div>
-            </li>
-            {% endfor %}
-          </ul>
-          <a
-            href="/projects"
-            class="btn btn-sm btn-outline-secondary btn-home mx-auto mt-auto rounded-pill"
-            >See All</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Call to Action -->
-<section
-  class="text-center py-5"
-  style="background: linear-gradient(90deg, #fffbe7 60%, #e0f7fa 100%)"
->
-  <div class="container">
-    <h2 style="font-family: 'Poppins', Arial, sans-serif; color: #388e3c">
-      Join Us in Making a Difference
-    </h2>
-    <p class="text-center">
-      Your support helps us reach more communities with life-saving programs.
-    </p>
-    <a href="/donate" class="btn btn-success btn-lg rounded-pill px-4 shadow"
-      >Support Us</a
-    >
-  </div>
-</section>
-
+    </section>
+    
+   
 {% endblock content %}

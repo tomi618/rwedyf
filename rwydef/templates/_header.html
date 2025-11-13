@@ -1,10 +1,16 @@
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+<header
+  class="header"
+  style="
+    background: linear-gradient(120deg, #e0f7fa 0%, #fffde7 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  "
+>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid text-dark">
       <!-- Brand on the left -->
       <a class="navbar-brand" href="/">
         <img
-          src="{{ url_for('static', filename='/pics/rwydef_logo.png') }}"
+          src="https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031759/rwydef_logo_dbusb0.png"
           alt="Logo"
           width="40"
           height="40"
@@ -26,7 +32,10 @@
         class="collapse navbar-collapse justify-content-end"
         id="navbarSupportedContent"
       >
-        <ul class="navbar-nav mb-2 mb-lg-0">
+        <ul
+          class="navbar-nav mb-2 mb-lg-0 navigation-items"
+          style="color: #388e3c; font-weight: 500; letter-spacing: 0.5px"
+        >
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
@@ -49,8 +58,8 @@
               Membership
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Members</a></li>
-              <li><a class="dropdown-item" href="#">Partners</a></li>
+              <li><a class="dropdown-item" href="/members">Members</a></li>
+              <li><a class="dropdown-item" href="/partners">Partners</a></li>
             </ul>
           </li>
 

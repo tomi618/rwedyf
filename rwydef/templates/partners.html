@@ -1,0 +1,39 @@
+{% extends "layout.html" %} {% block content %}
+<section class="py-5 min-vh-80 d-flex align-items-center" style="background: #e0f7fa; min-height: 80vh;">
+  <div class="container w-100">
+    <h2
+      class="mb-4 text-center"
+      style="font-family: 'Poppins', Arial, sans-serif; color: #388e3c"
+    >
+      Our Partners
+    </h2>
+    <div class="row g-4 justify-content-center">
+      {% for partner in [ {'name': 'Global Health Foundation', 'desc':
+      'Supporting rural health initiatives since 2015.', 'img':
+      'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80'},
+      {'name': 'EduCare Africa', 'desc': 'Partnering for educational outreach in
+      Kogi State.', 'img':
+      'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80'},
+      {'name': 'Women Empowerment Trust', 'desc': 'Empowering women and youth
+      through microcredit.', 'img':
+      'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80'}
+      ] %}
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm border-0 h-100 rounded-4">
+          <img
+            src="{{ partner.img }}"
+            class="card-img-top"
+            style="height: 180px; object-fit: cover"
+            alt="{{ partner.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ partner.name }}</h5>
+            <p class="card-text text-muted">{{ partner.desc }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %} {% block content %}
+<section
+  class="p-2 min-vh-80 d-flex align-items-center"
+  style="background: #e0f7fa; min-height: 80vh"
+>
+  <div class="container">
+    <h2
+      class="mb-4 text-center"
+      style="font-family: 'Poppins', Arial, sans-serif; color: #388e3c"
+    >
+      Our Members
+    </h2>
+    <div class="row g-4 justify-content-center">
+      {% for member in [ {'name': 'Dr. Kabiru Atta', 'role': 'Project
+      Coordinator', 'img': 'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/dr_kb_q5ccnc.png'}, {'name': 'Mrs. Atta
+      Sherifat', 'role': 'Procurement Officer', 'img':
+      'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031758/aunty_sher_b3f58o.png'}, {'name': 'Mr. Haroun Opotu', 'role':
+      'Education Specialist', 'img':
+      'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/male-avatar_fz50lc.jpg'}, {'name': 'Mrs.
+      Husseini Hauwa E.', 'role': 'Account Officer', 'img':
+      'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/female-avatar_ryy6h5.jpg'}, {'name': 'Mr. Muhammed
+      Lamidi Enesi.', 'role': 'Monitoring & Evaluation Officer', 'img':
+      'https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/male-avatar_fz50lc.jpg'} ] %}
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow-sm border-0 text-center h-100 rounded-4">
+          <img
+            src="{{ member.img }}"
+            class="card-img-top rounded-circle mx-auto mt-3"
+            style="width: 100px; height: 100px; object-fit: cover"
+            alt="{{ member.name }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text text-muted text-center">{{ member.role }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock content %}

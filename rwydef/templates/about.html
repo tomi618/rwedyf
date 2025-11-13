@@ -1,74 +1,47 @@
 {% extends "layout.html" %} {% block content %}
-<h1>{{title}}</h1>
-<blockquote><em>{{page_quote}}</em></blockquote>
-
-<section>
-  <article>
-    <span class="fw-bold">Our Core Values:</span>
-    <span class="core-values_about"
-      >Empowering women and children through education, health, economic
-      justice, and stronger communities
-    </span>
-  </article>
-
-  <article>
-    <span class="fw-bold">Mission Statement:</span>
-    <span class="core-values_about"
-      >Integrity, Accountability, Human Rights, Transparency, Gender Equity,
-      Team Work, Leadership
-    </span>
-  </article>
-  <p>
-    (RWYDEF) was founded on October 10, 2002, in Lokoja, Kogi State, as a
-    non-governmental organization committed to impacting lives positively. Our
-    mission is to empower women and the young by providing them with the skills,
-    resources, and support they need to discover and harness their inherent
-    strengths. Through targeted training programs, mentorship opportunities, and
-    community-driven projects, overcoming barriers, and turning their
-    aspirations into tangible achievements. By fostering an environment of
-    encouragement, collaboration, and personal growth, RWYDEF helps individuals
-    build meaningful, purpose-filled lives and contribute positively to the
-    broader society.
-  </p>
-
-  <p>
-    We are founded on the principle of compassion—loving others as we do
-    ourselves—recognizing that life presents different challenges to each of us.
-    We believe that true service to humanity goes beyond fulfilling civic
-    responsibilities; it is reflected in our willingness to give back, to lend a
-    helping hand in any way we can, no matter how small.
-  </p>
-
-  <article>
-    <h3 class="fw-bold">Our Goals:</h3>
-    <ul>
-      <li>
-        Introduction and sustenance of a Youth Educational Scheme to provide
-        scholarship and other educational assistance
-      </li>
-      <li>
-        Help develop new systems and work with existing structures to
-        incorporate gender and human rights issues and mechanisms
-      </li>
-      <li>
-        Create awareness in the public on health issues such as HIV and Malaria
-        and provide systems for access to affordable and effective health care
-      </li>
-      <li>
-        Help rural communities to develop and maintain a Micro-Credit Scheme for
-        rural market women and proffer ways for access to capital with training
-        on financial and managerial skills
-      </li>
-      <li>
-        To create grounds for children to express themselves through development
-        of Leadership skills
-      </li>
-      <li>
-        Provide forums for community discussions as a research tool for NEEDS
-        assessment to provide data for policy makers
-      </li>
-    </ul>
-  </article>
+<section class="py-5" style="background: #f6f8fa;">
+  <div class="container section rounded-4 shadow-sm p-4 my-4">
+    <h1 class="mb-3 text-success" style="font-family: 'Poppins', Arial, sans-serif;">{{title}}</h1>
+    <blockquote class="blockquote mb-4"><em>{{page_quote}}</em></blockquote>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center justify-content-center">
+        <div style="width: 220px; height: 220px; border-radius: 50%; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.10); background: #fff; margin-bottom: 1.2rem;">
+            <img src="https://res.cloudinary.com/dx3zbcw0b/image/upload/v1763031757/mum_founder_uompwg.jpg" 
+                 alt="Founder" 
+                 style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+        </div>
+        <p style="max-width: 320px; color: #444;">
+          Hajia (Chief) Maryam Ladi Ibrahim, FCNA, born in 1952 in Adavi, Kogi State, is a trailblazing Nigerian accountant, public servant, and philanthropist. A former President/Chairman of the Association of National Accountants of Nigeria (ANAN), she was the first woman in Nigeria to serve as a State Auditor-General. With a strong academic background from Ahmadu Bello University and numerous international certifications, she has held various influential positions in public service, including Secretary to the Kogi State Government and pioneer Director General of the Kogi State Lands and Housing Services Bureau. She is also the founder of the Rural Women Empowerment and Youth Development Foundation (RWEYDF), a prominent NGO supporting women and youth through education, micro-credit, and entrepreneurship. An award-winning leader and advocate for transparency, peace, and girl-child education, she has contributed extensively to national development through roles in organizations such as FRCN, NEITI, PAFA, and ABWA.
+        </p>
+    </div>
+      <div class="col-md-6">
+        <article>
+          <span class="fw-bold">Our Core Values:</span>
+          <span class="core-values_about">Integrity, Accountability, Human Rights, Transparency, Gender Equity, Team Work, Leadership</span>
+        </article>
+        <article class="mt-3">
+          <span class="fw-bold">Mission Statement:</span>
+          <span class="core-values_about">Working towards a caring Society</span>
+          <p>Founded on October 10, 2002, in Lokoja, Kogi State, the Rural Women Empowerment and Youth Development Foundation (RWEYDF) is a non-profit, non-governmental organization committed to improving lives through access to quality healthcare, education, economic empowerment, and social justice—especially for women, youth, and vulnerable populations in rural communities in Kogi State, Nigeria.</p>
+        </article>
+        <article class="mt-3">
+          <h3 class="fw-bold">Our Mission:</h3>
+          <p>We exist to empower rural women and youth by providing them with the skills, resources, and opportunities they need to lead healthy, dignified, and economically productive lives. Through a combination of health interventions, educational support, micro-credit schemes, and advocacy for human and gender rights, we work to remove systemic barriers and help individuals transform their aspirations into lasting change.</p>
+        </article>
+        <article class="mt-3">
+          <h3 class="fw-bold">Our Approach:</h3>
+          <p>At RWEYDF, we believe that true empowerment starts at the grassroots. We work hand-in-hand with local communities, listening to their unique challenges and co-creating solutions that are practical and sustainable. Our programs are grounded in compassion, equity, and evidence-based practices.</p>
+          <p><span>We actively collaborate with: </span>
+            <ul>
+              <li>Government agencies</li>
+              <li>Civil society organizations (CSOs)</li>
+              <li>Health institutions and international donors</li>
+            </ul>
+            This collaborative spirit ensures that our projects are not only impactful but also scalable and sustainable.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
 </section>
-
 {% endblock content %}

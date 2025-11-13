@@ -1,12 +1,24 @@
 <!-- Footer -->
-<footer class="container-fluid py-1 bg-light mt-2">
-  <div class="text-center">
-    <p class="text-center">
-      &copy; {{ current_year }} RWEYDF. All rights reserved.
-    </p>
-    <p class="text-center">
-      <a href="/contact-us">Contact Us</a> |
-      <a href="/about">About</a>
-    </p>
-  </div>
+<footer
+  class="container-fluid py-3 mt-2 text-center"
+  style="
+    background: linear-gradient(90deg, #e0f7fa 60%, #fffde7 100%);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+  "
+>
+  <p
+    class="mb-1"
+    style="color: #388e3c; font-weight: 500; letter-spacing: 0.5px"
+  >
+    &copy; {{ current_year }} RWEYDF. All rights reserved.
+  </p>
+  <p class="mb-0">
+    <a href="/contact-us" style="color: #388e3c; text-decoration: underline"
+      >Contact Us</a
+    >
+    |
+    <a href="/about" style="color: #388e3c; text-decoration: underline"
+      >About</a
+    >
+  </p>
 </footer>

@@ -1,7 +1,8 @@
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-optical-sizing: auto;
-  font-size: 14px;
+  font-size: 1rem;
+  word-spacing: 2px;
 }
 
 h1,
@@ -10,14 +11,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lusitana', serif;
-  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   font-style: normal;
+  letter-spacing: 2px;
 }
 
-.core-values_about {
-  font-family: 'Lusitana', serif;
+.btn-home {
+  font-weight: 600;
 }
+.btn-home:hover {
+  background-color: #9fb3df;
+  border: none;
+  color: white;
+}
+/* .core-values_about {
+  font-family: 'Lusitana', serif;
+} */
 
 p {
   text-align: justify;
@@ -31,10 +41,14 @@ ul {
   text-align: justify;
 }
 
-/* footer > p {
-  margin: 0 auto;
-} */
-
-/* footer {
-  background-color: #87cefa;
-} */
+body {
+  background: #f6f8fa; /* soft blue-grey */
+}
+.section {
+  background: #fffbf7; /* very light yellow */
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.hero {
+  background: linear-gradient(120deg, #e0f7fa 0%, #fffde7 100%);
+}
